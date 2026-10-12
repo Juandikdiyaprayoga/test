@@ -534,7 +534,7 @@
             10% {
                 opacity: 0.8;
             }
-         
+
             50% {
                 transform: translateY(-50vh) translateX(40px) rotate(20deg);
             }
@@ -544,8 +544,6 @@
                 opacity: 0;
             }
         }
-
-        
 
         @media (max-width: 600px) {
             .card {
@@ -608,7 +606,6 @@
 
 <body>
 
-
     <div class="card" id="loginPage">
         <div class="login-title">🎂 Birthday Surprise 🎂</div>
 
@@ -638,7 +635,6 @@
             style="color: #ffd5d5; margin-top: 15px;"
         ></p>
     </div>
-
 
     <div class="card" id="birthdayPage">
         <div class="birthday-title">🎉 HAPPY BIRTHDAY 🎉</div>
@@ -675,7 +671,6 @@
 
         <p id="randomMessage"></p>
     </div>
-
 
     <!-- ==================== HALAMAN RIDDLE ==================== -->
 
@@ -723,7 +718,6 @@
         </div>
     </div>
 
-
     <!-- ==================== HALAMAN SURAT RAHASIA ==================== -->
 
     <div id="secretPage">
@@ -743,7 +737,6 @@
                 </div>
             </div>
 
-
             <!-- Isi surat -->
 
             <div class="letter" id="letter">
@@ -752,11 +745,6 @@
                     <div class="letter-title">
                         Teruntuk Inka...
                     </div>
-
-                    <!--
-                        Letakkan foto di folder yang sama
-                        dengan file HTML.
-                    -->
 
                     <div class="memory-container">
 
@@ -786,7 +774,6 @@
 
                     </div>
 
-
                     <!-- Pesan yang muncul bertahap -->
 
                     <div class="main-message">
@@ -806,7 +793,6 @@
                             Dulu kita dekat, sekarang hanya saling tahu nama.
                         </span>
                     </div>
-
 
                     <!-- Pesan terakhir -->
 
@@ -829,7 +815,6 @@
 
         <div class="floating-hearts"></div>
     </div>
-
 
     <!-- ==================== POPUP PESAN SPESIAL ==================== -->
 
@@ -855,7 +840,6 @@
             </button>
         </div>
     </div>
-
 
     <script>
         // ==================== LOGIN ====================
@@ -891,14 +875,12 @@
             confetti();
         }
 
-
         // ==================== HADIAH ====================
 
         function openGift() {
             document.getElementById("giftMessage").style.display = "block";
             confetti();
         }
-
 
         // ==================== POPUP PESAN ====================
 
@@ -909,7 +891,6 @@
         function closeMessage() {
             document.getElementById("popup").style.display = "none";
         }
-
 
         // ==================== CONFETTI ====================
 
@@ -949,7 +930,6 @@
             ];
         }
 
-
         // ==================== PESAN ACAK ====================
 
         function changeMessage() {
@@ -969,13 +949,11 @@
                 ];
         }
 
-
         // ==================== MODE GELAP ====================
 
         function darkMode() {
             document.body.classList.toggle("dark");
         }
-
 
         // ==================== NAVIGASI RIDDLE ====================
 
@@ -991,7 +969,6 @@
             document.getElementById("riddlePage").style.display = "none";
             document.getElementById("birthdayPage").style.display = "block";
         }
-
 
         // ==================== JAWABAN RIDDLE ====================
 
@@ -1028,7 +1005,6 @@
             }
         }
 
-
         // ==================== ANIMASI SURAT ====================
 
         function openLetter() {
@@ -1042,7 +1018,6 @@
                 startHearts();
             }, 900);
         }
-
 
         // ==================== ANIMASI HATI ====================
 
@@ -1078,7 +1053,6 @@
                 setTimeout(() => heart.remove(), 10000);
             }, 600);
         }
-
 
         // ==================== KEMBALI DARI SURAT ====================
 
